@@ -18,13 +18,13 @@ import java.util.List;
 public class SaleDetailEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idDetail", unique = true, nullable = false)
+    @Column(name = "id_detail", unique = true, nullable = false)
     private Long idDetail;
 
     @Column(name = "quantity", nullable = false)
     private Integer quantity;
 
-    @Column(name = "unitPrice", precision = 10, scale = 2, nullable = false)
+    @Column(name = "unit_price", precision = 10, scale = 2, nullable = false)
     private BigDecimal unitPrice;
 
     @Column(name = "subtotal", precision = 10, scale = 2, nullable = false)

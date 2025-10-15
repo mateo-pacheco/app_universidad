@@ -34,7 +34,7 @@ public class SaleEntity {
     private BigDecimal total;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "paymentMethod", nullable = false)
+    @Column(name = "payment_method", nullable = false)
     private PaymentMethod paymentMethod;
 
     @Enumerated(EnumType.STRING)
@@ -42,7 +42,7 @@ public class SaleEntity {
     private StatusSale status;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "orderType", nullable = false)
+    @Column(name = "order_type", nullable = false)
     private OrderType orderType;
 
     @Column(name = "notes",  nullable = false, columnDefinition = "TEXT")
