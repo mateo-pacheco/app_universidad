@@ -8,17 +8,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "app_category")
+@Table(name = "app_category_sale")
 @Getter
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class CategoryEntity {
+public class CategorySaleEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_category", unique = true, nullable = false)
-    private Long idCategory;
+    @Column(name = "id_category_sale", unique = true, nullable = false)
+    private Long idCategorySale;
 
     @Column(name = "name", length = 50, nullable = false)
     private String name;
@@ -36,8 +36,8 @@ public class CategoryEntity {
     private LocalDateTime updatedAt;
 
     // Relaciones
-    // Categoria - Producto
-    @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
+    // Categoria Venta - Producto Venta
+    @OneToMany(mappedBy = "categorySale", fetch = FetchType.LAZY)
     @Builder.Default
-    private List<ProductEntity> products = new ArrayList<>();
+    private List<ProductoSaleEntity> productoSaleEntities = new ArrayList<>();
 }
