@@ -68,6 +68,6 @@ public class ProductoSaleEntity {
     private List<SaleDetailEntity> saleDetails = new ArrayList<>();
 
     // Producto Venta - Receta
-    @OneToMany(mappedBy = "productSaleEntity", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "productSale", fetch = FetchType.LAZY)
     private List<RecipeEntity> recipeEntities;
 }

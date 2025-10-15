@@ -51,6 +51,6 @@ public class ProductEntity {
     private CategoryEntity category;
 
     // Producto - Receta
-    @OneToMany(mappedBy = "productEntity", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
     private List<RecipeEntity> recipes;
 }

@@ -38,10 +38,10 @@ public class RecipeEntity {
     // Receta - Producto
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_product", referencedColumnName = "id_product", nullable = false)
-    private ProductEntity productEntity;
+    private ProductEntity product;
 
     // Receta - Producto Venta
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "id_product_sale", referencedColumnName = "id_product_sale", nullable = false)
-    private ProductoSaleEntity productSaleEntity;
+    private ProductoSaleEntity productSale;
 }
