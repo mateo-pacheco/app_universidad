@@ -34,7 +34,7 @@ public class ProductoSaleEntity {
     @Column(name = "image_url", nullable = false)
     private String imageUrl;
 
-    @Column(name = "salePrice", precision = 10, scale = 2, nullable = false)
+    @Column(name = "sale_price", precision = 10, scale = 2, nullable = false)
     private BigDecimal salePrice;
 
     @Column(name = "discount", precision = 10, scale = 2, nullable = false)
