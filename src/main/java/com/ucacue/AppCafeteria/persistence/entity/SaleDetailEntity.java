@@ -43,7 +43,7 @@ public class SaleDetailEntity {
     private SaleEntity sale;
 
     // Venta Detalle - Producto Venta
-    @OneToMany(mappedBy = "saleDetail", fetch = FetchType.LAZY)
-    @Builder.Default
-    private List<ProductoSaleEntity> productSales = new ArrayList<>();
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "id_product_sale", referencedColumnName = "id_product_sale", nullable = false)
+    private ProductoSaleEntity productSale;
 }

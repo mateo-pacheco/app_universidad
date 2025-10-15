@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Entity
 @Table(name = "app_product")
@@ -49,9 +50,7 @@ public class ProductEntity {
     @JoinColumn(name = "id_category", referencedColumnName = "id_category", nullable = false)
     private CategoryEntity category;
 
-    // Producto - Producto Venta
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "id_product_sale", referencedColumnName = "id_product_sale", nullable = false)
-    private ProductoSaleEntity productSale;
-
+    // Producto - Receta
+    @OneToMany(mappedBy = "productEntity", fetch = FetchType.LAZY)
+    private List<RecipeEntity> recipes;
 }

@@ -62,13 +62,12 @@ public class ProductoSaleEntity {
     @JoinColumn(name = "id_category_sale", referencedColumnName = "id_category_sale", nullable = false)
     private CategorySaleEntity categorySale;
 
-    // Producto Venta - Producto
+    // Producto Venta - Venta Detalle
     @OneToMany(mappedBy = "productSale", fetch = FetchType.LAZY)
     @Builder.Default
-    private List<ProductEntity> products = new ArrayList<>();
+    private List<SaleDetailEntity> saleDetails = new ArrayList<>();
 
-    // Producto Venta - Venta Detalle
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "idDetail", referencedColumnName = "idDetail", nullable = false)
-    private SaleDetailEntity saleDetail;
+    // Producto Venta - Receta
+    @OneToMany(mappedBy = "productSaleEntity", fetch = FetchType.LAZY)
+    private List<RecipeEntity> recipeEntities;
 }
