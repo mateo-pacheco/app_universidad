@@ -5,6 +5,7 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
@@ -52,5 +53,6 @@ public class ProductEntity {
 
     // Producto - Receta
     @OneToMany(mappedBy = "product", fetch = FetchType.LAZY)
-    private List<RecipeEntity> recipes;
+    @Builder.Default
+    private List<RecipeEntity> recipes = new ArrayList<>();
 }

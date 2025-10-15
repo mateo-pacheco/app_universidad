@@ -31,7 +31,7 @@ public class ProductoSaleEntity {
     @Column(name = "description", nullable = false, columnDefinition = "TEXT")
     private String description;
 
-    @Column(name = "iamge_url", nullable = false)
+    @Column(name = "image_url", nullable = false)
     private String imageUrl;
 
     @Column(name = "salePrice", precision = 10, scale = 2, nullable = false)
@@ -69,5 +69,6 @@ public class ProductoSaleEntity {
 
     // Producto Venta - Receta
     @OneToMany(mappedBy = "productSale", fetch = FetchType.LAZY)
-    private List<RecipeEntity> recipeEntities;
+    @Builder.Default
+    private List<RecipeEntity> recipes = new ArrayList<>();
 }
