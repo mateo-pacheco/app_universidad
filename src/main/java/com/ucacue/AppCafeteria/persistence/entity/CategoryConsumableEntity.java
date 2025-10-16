@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name = "app_consumable")
+@Table(name = "app_category_consumable")
 @Getter
 @Setter
 @AllArgsConstructor
