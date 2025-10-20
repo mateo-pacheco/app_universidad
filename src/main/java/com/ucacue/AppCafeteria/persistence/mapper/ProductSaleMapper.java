@@ -10,8 +10,8 @@ import java.util.List;
 @Mapper(componentModel = "spring")
 public interface ProductSaleMapper {
     // Entity to Model
-    ProductSale toProductSale(ProductSale productSale);
-    List<ProductSale> toProductSales(List<ProductSale> productSales);
+    ProductSale toProductSale(ProductoSaleEntity productSaleEntity);
+    List<ProductSale> toProductSales(List<ProductoSaleEntity> productSalesEntity);
 
     // Model to Entity
     @Mapping(target = "saleDetails", ignore = true)

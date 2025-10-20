@@ -3,9 +3,6 @@ package com.ucacue.AppCafeteria.domain.model;
 import com.ucacue.AppCafeteria.domain.enumerations.OrderType;
 import com.ucacue.AppCafeteria.domain.enumerations.PaymentMethod;
 import com.ucacue.AppCafeteria.domain.enumerations.StatusSale;
-import jakarta.persistence.Column;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -20,6 +17,8 @@ import java.util.List;
 @Builder
 public class Sale {
     private Long idSale;
+
+    private String tableNumber;
 
     private BigDecimal subtotal;
 

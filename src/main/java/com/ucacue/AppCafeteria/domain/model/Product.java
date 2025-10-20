@@ -1,6 +1,5 @@
 package com.ucacue.AppCafeteria.domain.model;
 
-import com.ucacue.AppCafeteria.domain.enumerations.StatusProductSale;
 import lombok.*;
 
 import java.math.BigDecimal;
@@ -12,7 +11,7 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @Builder
 public class Product {
-    private Long idProductSale;
+    private Long idProduct;
 
     private String code;
 
@@ -20,17 +19,11 @@ public class Product {
 
     private String description;
 
+    private BigDecimal purchasePrice;
+
     private String imageUrl;
 
-    private BigDecimal salePrice;
-
-    private BigDecimal discount;
-
-    private Integer stock;
-
-    private boolean active;
-
-    private StatusProductSale status;
+    private Boolean active;
 
     private LocalDateTime createdAt;
 
