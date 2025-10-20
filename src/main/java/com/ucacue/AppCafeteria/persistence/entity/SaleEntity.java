@@ -24,6 +24,9 @@ public class SaleEntity {
     @Column(name = "id_sale", unique = true, nullable = false)
     private Long idSale;
 
+    @Column(name = "table_number", nullable = false)
+    private String tableNumber;
+
     @Column(name = "subtotal", precision = 10, scale = 2, nullable = false)
     private BigDecimal subtotal;
 
