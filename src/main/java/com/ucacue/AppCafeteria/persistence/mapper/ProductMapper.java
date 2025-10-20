@@ -14,7 +14,6 @@ public interface ProductMapper {
     List<Product> toProducts(List<ProductEntity> productEntities);
 
     // Model to Entity
-    @Mapping(target = "category", ignore = true)
     @Mapping(target = "recipes", ignore = true)
     ProductEntity toProductEntity(Product product);
     List<ProductEntity> toProductsEntity(List<Product> products);

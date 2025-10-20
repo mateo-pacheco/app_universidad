@@ -23,6 +23,4 @@ public class Category {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
-
-    private List<Product> products = new ArrayList<>();
 }

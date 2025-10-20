@@ -37,7 +37,7 @@ public class ProductEntity {
     private String imageUrl;
 
     @Column(name = "active")
-    private Boolean active;
+    private boolean active;
 
     @Column(name = "created_date", nullable = false)
     private LocalDateTime createdAt;

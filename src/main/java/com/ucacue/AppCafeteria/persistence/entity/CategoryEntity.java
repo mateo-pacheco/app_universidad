@@ -1,5 +1,6 @@
 package com.ucacue.AppCafeteria.persistence.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -39,5 +40,6 @@ public class CategoryEntity {
     // Categoria - Producto
     @OneToMany(mappedBy = "category", fetch = FetchType.LAZY)
     @Builder.Default
+    @JsonIgnore
     private List<ProductEntity> products = new ArrayList<>();
 }

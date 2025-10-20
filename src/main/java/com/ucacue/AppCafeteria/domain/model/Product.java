@@ -23,9 +23,11 @@ public class Product {
 
     private String imageUrl;
 
-    private Boolean active;
+    private boolean active;
 
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    private Category category;
 }
