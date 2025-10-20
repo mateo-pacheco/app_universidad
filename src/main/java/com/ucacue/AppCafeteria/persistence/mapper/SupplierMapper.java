@@ -7,7 +7,7 @@ import org.mapstruct.Mapper;
 
 import java.util.List;
 
-@Mapper(componentModel = "spring", uses = {PurchaseOrder.class})
+@Mapper(componentModel = "spring", uses = {PurchaseOrderMapper.class})
 public interface SupplierMapper {
     // Entity to Model
     Supplier toSupplier(SupplierEntity supplierEntity);

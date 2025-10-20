@@ -1,6 +1,5 @@
 package com.ucacue.AppCafeteria.persistence.mapper;
 
-import com.ucacue.AppCafeteria.domain.model.ProductSale;
 import com.ucacue.AppCafeteria.domain.model.PurchaseOrder;
 import com.ucacue.AppCafeteria.persistence.entity.PurchaseOrderEntity;
 import org.mapstruct.Mapper;

@@ -10,7 +10,7 @@ import java.util.List;
 public interface CategorySaleMapper {
     // Entity to Model
     CategorySale toCategorySale(CategorySaleEntity categorySaleEntity);
-    List<CategorySale> toCategorySales(List<CategorySaleEntity> categorySaleEntities);
+    List<CategorySale> toCategorySales(List<CategorySaleEntity> categorySales);
 
     // Model to Entity
     CategorySaleEntity toCategorySaleEntity(CategorySale categorySale);

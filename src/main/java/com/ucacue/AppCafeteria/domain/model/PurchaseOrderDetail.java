@@ -19,6 +19,4 @@ public class PurchaseOrderDetail {
     private BigDecimal subtotal;
 
     private Consumable consumable;
-
-    private PurchaseOrder purchaseOrder;
 }
