@@ -38,4 +38,6 @@ public class Consumable {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    private CategoryConsumable categoryConsumable;
 }

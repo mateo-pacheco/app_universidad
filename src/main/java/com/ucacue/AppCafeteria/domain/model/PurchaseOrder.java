@@ -5,6 +5,8 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -27,4 +29,8 @@ public class PurchaseOrder {
     private BigDecimal total;
 
     private String notes;
+
+    private Supplier supplier;
+
+    private List<PurchaseOrderDetail> purchaseOrderDetails =  new ArrayList<>();
 }

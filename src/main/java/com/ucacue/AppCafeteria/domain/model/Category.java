@@ -3,6 +3,8 @@ package com.ucacue.AppCafeteria.domain.model;
 import lombok.*;
 
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -21,4 +23,6 @@ public class Category {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    private List<Product> products = new ArrayList<>();
 }

@@ -22,4 +22,8 @@ public class Recipe {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    private Product product;
+
+    private ProductSale productSale;
 }

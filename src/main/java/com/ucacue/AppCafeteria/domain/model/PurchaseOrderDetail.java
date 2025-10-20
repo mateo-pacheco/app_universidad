@@ -17,4 +17,8 @@ public class PurchaseOrderDetail {
     private BigDecimal unitPrice;
 
     private BigDecimal subtotal;
+
+    private Consumable consumable;
+
+    private PurchaseOrder purchaseOrder;
 }

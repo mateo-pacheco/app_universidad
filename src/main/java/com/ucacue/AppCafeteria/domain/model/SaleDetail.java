@@ -22,4 +22,8 @@ public class SaleDetail {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    private Sale sale;
+
+    private ProductSale productSale;
 }

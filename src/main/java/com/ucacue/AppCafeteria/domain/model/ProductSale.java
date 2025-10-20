@@ -35,4 +35,6 @@ public class ProductSale {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    private CategorySale categorySale;
 }

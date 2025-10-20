@@ -10,6 +10,8 @@ import lombok.*;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
+import java.util.List;
 
 @Getter
 @Setter
@@ -36,4 +38,6 @@ public class Sale {
     private LocalDateTime createdAt;
 
     private LocalDateTime updatedAt;
+
+    private List<SaleDetail> saleDetails = new ArrayList<>();
 }
